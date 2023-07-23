@@ -8,3 +8,7 @@
 (e) But if we Defer, then browser will parallaly do both the Parsing of HTML and Loading of script and after creating the complete DOM it attaches the Script manipulations to them. So it is best to use the script tag after all the body elements are written.
 (f) then after creation of DOM and CSSOM it combines them to create Render Tree. then based on Render Tree, Browser does Layouting, in Layouting it basically decided the size and position of each element in the given screen.
 (g) and then finally it renderes everything out in 60FPS and this last process is called Paint.
+
+2. Where are servers located?
+
+: Mostly in Data Centres built by tech giants like Amazon, Google, Microsoft. And these centres holds a lot of computer which are personalised to store data very efficiently and in a fast manner and connceted to the internet 24*7.
