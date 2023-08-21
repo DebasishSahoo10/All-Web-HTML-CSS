@@ -12,3 +12,9 @@
 2. Where are servers located?
 
 : Mostly in Data Centres built by tech giants like Amazon, Google, Microsoft. And these centres holds a lot of computer which are personalised to store data very efficiently and in a fast manner and connceted to the internet 24*7.
+
+3. What are Web Sockets?
+
+: A App is the combination of the front-end and back-end. and to get something to the or from the backend we need to do a HTTP request. In that request we send or request some data, that request is ended and considered sucessful, when that data or request has reached the server. To get a piece of a data from the server, server has to make another conncetion to the client. It is exactly works like letters you send the letter and wait for another to come. Sounds inefficient.
+: To solve this Web Sockets came into picture. It works like live data sharing, exactly like a phone call. Where the client and server are conceted the whole time after the first hand shake. and they share data and requests all the time continously. So is it the optimal solution. The answer really depends. Web Sockets are not that much scalable. Because the server has to be active all the time, compare to the HTTP way, where it can entertain one client and then move on to the next.
+: But still web sockets are used in scale. Because when it is needed, it has to be used. A prime example is Whatsaap. It still uses web sockets, because in a chat app the sending and recieving of messages happens in real time and it has to be that way only.
