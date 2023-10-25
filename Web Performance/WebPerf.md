@@ -1,6 +1,7 @@
 1. Critical Rendering Path :
 
 (a) the first process : DNS Lookup : when we enter a website address in the browser, it searches for the IP Address it is hosted on, that IP Adress is attached to the server which holds the files of our app, then our browser makes a HTTP request to that server, and in the response Server sends the files. these files are mostly HTML. 
+
 (b) then Browser starts to parse that HTML file to create the DOM, it doesn't even wait for the HTML to be fully loaded in the browser. First Browser converts the HTML code into Response, then to tokens, then to nodes, then to final DOM. Every tag from HTML denotes a node. So we can say that, one open-tag with one close-tag form a node, hence, every node can have node children, so it look like a hireachy and this also why DOM is called a TREE.
 (c) While parsing HTML if it encounters a CSS file, then it stop the parsing HTML, and go on to download CSS file and parse it to create the CSSOM. after completing it browser again resume parsing HTML. But CSS parsing is not partial, it means to parse it, browser needs the whole file. Also parsing CSS pauses every thing, HTML or JS parsing. It mean it is render blocking. So how to optimise it?
 (d) First is Inline CSS, then Media Queries. Also, in CSS generic selectors takes lesser time than more specific selectors. For an example applying color to all H1, but bhen the selector is nested or specific, then it needs to go inside the DOM tree to find that element. (CSS Parsing : CSS Code -> Characters -> Tokens -> Nodes -> CSSOM)
